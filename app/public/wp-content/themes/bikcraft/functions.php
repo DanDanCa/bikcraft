@@ -24,7 +24,7 @@ function the_field($key, $page_id = 0){
 
 add_action('cmb2_admin_init', 'fields_home');
   function fields_home(){
-    // Introducao
+// Introducao
       $intro = new_cmb2_box([
         'id' => 'home_box',
         'title' => 'Introdução',
@@ -52,4 +52,69 @@ add_action('cmb2_admin_init', 'fields_home');
         'id' => 'citacao_introducao',
         'type' => 'text',
       ]);
+    //fim introdução
+    //chamadas
+      $chamadas = new_cmb2_box([
+        'id' => 'chamadas_box',
+        'title' => 'Chamadas',
+        'object_types' => ['page', 'post'],
+        'show_on' => [
+          'key' => 'page-template',
+          'value' => 'page-home.php',
+        ],
+      ]);
+
+      $chamadas->add_field([
+        'name' => 'Chamada Produtos',
+        'id' => 'chamada_produtos',
+        'type' => 'text',
+      ]);
+
+      $chamadas->add_field([
+        'name' => 'Chamada Portifólio',
+        'id' => 'chamada_portifolio',
+        'type' => 'text',
+      ]);
+    //Fim Chamadas
+    //Qualidades
+    $sobre = new_cmb2_box([
+      'id' => 'qualidades_box',
+      'title' => 'Qualidades',
+      'object_types' => ['page', 'post'],
+      'show_on' => [
+        'key' => 'page-template',
+        'value' => 'page-sobre.php',
+      ],
+    ]);
+
+    $sobre->add_field([
+      'name' => 'Imagem Qualidades',
+      'id' => 'logo_bikcraft',
+      'type' => 'file',
+    ]);
+
+
+    $qualidade = $sobre->add_field([
+      'name' => 'Qualidades',
+      'id' => 'qualidade',
+      'type' => 'group',
+      'repeatable' => true,
+      'options' => [
+        'group_title' => 'Qualidade {#}',
+        'add_button' => 'Adicionar Qualidade',
+        'sortable' => true,
+      ]
+    ]);
+
+    $sobre->add_group_field($qualidade,[
+      'name' => 'Título',
+      'id' => 'titulo',
+      'type' => 'text',
+    ]);
+
+    $sobre->add_group_field($qualidade,[
+      'name' => 'Descrição',
+      'id' => 'descricao',
+      'type' => 'text',
+    ]);
 }
