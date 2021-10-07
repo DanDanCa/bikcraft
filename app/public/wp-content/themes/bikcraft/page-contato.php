@@ -2,13 +2,9 @@
 // Template Name: Contato
 get_header();
 ?>
-		<section class="introducao-interna interna_contato">
-			<div class="container">
-				<h1>Contato</h1>
-				<p>tire suas dúvidas com a gente</p>
-			</div>
-		</section>
 
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		<?php include(TEMPLATEPATH . "/inc/introducao.php");?>
 		<section class="contato container animar-interno">
 			<form action="enviar.php" method="post" name="form" class="formphp contato_form grid-8">
 				<label for="nome">Nome</label>
@@ -48,4 +44,5 @@ get_header();
 			<a href="http://google.com" target="_blank" class="grid-16"><img src="img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
 		</section>
 
+<?php endwhile; else: endif; ?>
 		<?php get_footer(); ?>

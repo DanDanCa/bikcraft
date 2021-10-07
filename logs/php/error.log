@@ -1,0 +1,81 @@
+[07-Oct-2021 19:56:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_trmplate_directory_uri() in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\header.php:28
+Stack trace:
+#0 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\template.php(770): require_once()
+#1 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\template.php(716): load_template('C:\\Users\\Danilo...', true, Array)
+#2 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\page-portfolio.php(3): get_header()
+#4 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Danilo...')
+#5 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Danilo...')
+#6 C:\Users\Danilo\Local Sites\bikcraft\app\public\index.php(17): require('C:\\Users\\Danilo...')
+#7 {main}
+  thrown in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\header.php on line 28
+[07-Oct-2021 19:56:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_trmplate_directory_uri() in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\header.php:28
+Stack trace:
+#0 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\template.php(770): require_once()
+#1 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\template.php(716): load_template('C:\\Users\\Danilo...', true, Array)
+#2 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\index.php(1): get_header()
+#4 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Danilo...')
+#5 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Danilo...')
+#6 C:\Users\Danilo\Local Sites\bikcraft\app\public\index.php(17): require('C:\\Users\\Danilo...')
+#7 {main}
+  thrown in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\header.php on line 28
+[07-Oct-2021 19:56:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_trmplate_directory_uri() in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\header.php:28
+Stack trace:
+#0 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\template.php(770): require_once()
+#1 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\template.php(716): load_template('C:\\Users\\Danilo...', true, Array)
+#2 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\index.php(1): get_header()
+#4 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Danilo...')
+#5 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Danilo...')
+#6 C:\Users\Danilo\Local Sites\bikcraft\app\public\index.php(17): require('C:\\Users\\Danilo...')
+#7 {main}
+  thrown in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\header.php on line 28
+[07-Oct-2021 19:56:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_trmplate_directory_uri() in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\header.php:28
+Stack trace:
+#0 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\template.php(770): require_once()
+#1 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\template.php(716): load_template('C:\\Users\\Danilo...', true, Array)
+#2 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\index.php(1): get_header()
+#4 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Danilo...')
+#5 C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Danilo...')
+#6 C:\Users\Danilo\Local Sites\bikcraft\app\public\index.php(17): require('C:\\Users\\Danilo...')
+#7 {main}
+  thrown in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\header.php on line 28
+[07-Oct-2021 20:03:32 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\page-contato.php on line 8
+[07-Oct-2021 20:03:41 UTC] PHP Warning:  include(C:\Users\Danilo\Local Sites\bikcraft\app\public/wp-content/themes/bikcraft/inc/introdução.php): failed to open stream: No such file or directory in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\page-contato.php on line 7
+[07-Oct-2021 20:03:41 UTC] PHP Stack trace:
+[07-Oct-2021 20:03:41 UTC] PHP   1. {main}() C:\Users\Danilo\Local Sites\bikcraft\app\public\index.php:0
+[07-Oct-2021 20:03:41 UTC] PHP   2. require() C:\Users\Danilo\Local Sites\bikcraft\app\public\index.php:17
+[07-Oct-2021 20:03:41 UTC] PHP   3. require_once() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-blog-header.php:19
+[07-Oct-2021 20:03:41 UTC] PHP   4. include() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\template-loader.php:106
+[07-Oct-2021 20:03:41 UTC] PHP Warning:  include(): Failed opening 'C:\Users\Danilo\Local Sites\bikcraft\app\public/wp-content/themes/bikcraft/inc/introdução.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\page-contato.php on line 7
+[07-Oct-2021 20:03:41 UTC] PHP Stack trace:
+[07-Oct-2021 20:03:41 UTC] PHP   1. {main}() C:\Users\Danilo\Local Sites\bikcraft\app\public\index.php:0
+[07-Oct-2021 20:03:41 UTC] PHP   2. require() C:\Users\Danilo\Local Sites\bikcraft\app\public\index.php:17
+[07-Oct-2021 20:03:41 UTC] PHP   3. require_once() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-blog-header.php:19
+[07-Oct-2021 20:03:41 UTC] PHP   4. include() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\template-loader.php:106
+[07-Oct-2021 20:04:02 UTC] PHP Warning:  include(C:\Users\Danilo\Local Sites\bikcraft\app\public/wp-content/themes/bikcraft/inc/introdução.php): failed to open stream: No such file or directory in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\page-contato.php on line 7
+[07-Oct-2021 20:04:02 UTC] PHP Stack trace:
+[07-Oct-2021 20:04:02 UTC] PHP   1. {main}() C:\Users\Danilo\Local Sites\bikcraft\app\public\index.php:0
+[07-Oct-2021 20:04:02 UTC] PHP   2. require() C:\Users\Danilo\Local Sites\bikcraft\app\public\index.php:17
+[07-Oct-2021 20:04:02 UTC] PHP   3. require_once() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-blog-header.php:19
+[07-Oct-2021 20:04:02 UTC] PHP   4. include() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\template-loader.php:106
+[07-Oct-2021 20:04:02 UTC] PHP Warning:  include(): Failed opening 'C:\Users\Danilo\Local Sites\bikcraft\app\public/wp-content/themes/bikcraft/inc/introdução.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\page-contato.php on line 7
+[07-Oct-2021 20:04:02 UTC] PHP Stack trace:
+[07-Oct-2021 20:04:02 UTC] PHP   1. {main}() C:\Users\Danilo\Local Sites\bikcraft\app\public\index.php:0
+[07-Oct-2021 20:04:02 UTC] PHP   2. require() C:\Users\Danilo\Local Sites\bikcraft\app\public\index.php:17
+[07-Oct-2021 20:04:02 UTC] PHP   3. require_once() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-blog-header.php:19
+[07-Oct-2021 20:04:02 UTC] PHP   4. include() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\template-loader.php:106
+[07-Oct-2021 20:04:33 UTC] PHP Warning:  include(C:\Users\Danilo\Local Sites\bikcraft\app\public/wp-content/themes/bikcraft/inc/introducao.php): failed to open stream: No such file or directory in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\page-contato.php on line 7
+[07-Oct-2021 20:04:33 UTC] PHP Stack trace:
+[07-Oct-2021 20:04:33 UTC] PHP   1. {main}() C:\Users\Danilo\Local Sites\bikcraft\app\public\index.php:0
+[07-Oct-2021 20:04:33 UTC] PHP   2. require() C:\Users\Danilo\Local Sites\bikcraft\app\public\index.php:17
+[07-Oct-2021 20:04:33 UTC] PHP   3. require_once() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-blog-header.php:19
+[07-Oct-2021 20:04:33 UTC] PHP   4. include() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\template-loader.php:106
+[07-Oct-2021 20:04:33 UTC] PHP Warning:  include(): Failed opening 'C:\Users\Danilo\Local Sites\bikcraft\app\public/wp-content/themes/bikcraft/inc/introducao.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\page-contato.php on line 7
+[07-Oct-2021 20:04:33 UTC] PHP Stack trace:
+[07-Oct-2021 20:04:33 UTC] PHP   1. {main}() C:\Users\Danilo\Local Sites\bikcraft\app\public\index.php:0
+[07-Oct-2021 20:04:33 UTC] PHP   2. require() C:\Users\Danilo\Local Sites\bikcraft\app\public\index.php:17
+[07-Oct-2021 20:04:33 UTC] PHP   3. require_once() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-blog-header.php:19
+[07-Oct-2021 20:04:33 UTC] PHP   4. include() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\template-loader.php:106
