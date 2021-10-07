@@ -79,3 +79,5 @@ Stack trace:
 [07-Oct-2021 20:04:33 UTC] PHP   2. require() C:\Users\Danilo\Local Sites\bikcraft\app\public\index.php:17
 [07-Oct-2021 20:04:33 UTC] PHP   3. require_once() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-blog-header.php:19
 [07-Oct-2021 20:04:33 UTC] PHP   4. include() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\template-loader.php:106
+[07-Oct-2021 20:25:16 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\functions.php on line 37
+[07-Oct-2021 20:25:16 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\functions.php on line 37
