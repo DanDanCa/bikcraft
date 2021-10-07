@@ -117,4 +117,64 @@ add_action('cmb2_admin_init', 'fields_home');
       'id' => 'descricao',
       'type' => 'text',
     ]);
+    //Fim chamadas
+    //Portifólio
+    $portifolio = new_cmb2_box([
+      'id' => 'portifolio_box',
+      'title' => 'Imagens do portifólio',
+      'object_types' => ['page', 'post'],
+      'show_on' => [
+        'key' => 'page-template',
+        'value' => 'page-portfolio.php',
+      ],
+    ]);
+
+    $imagens = $portifolio->add_field([
+      'name' => 'Imagens Portifólio',
+      'id' => 'imagens_portifolio',
+      'type' => 'group',
+      'repeatable' => true,
+      'options' => [
+        'group_title' => 'Carrossel {#}',
+        'add_button' => 'Adicionar Página de Carrossel',
+        'sortable' => true,
+      ]
+    ]);
+
+    $portifolio->add_group_field($imagens,[
+      'name' => 'Imagem 1',
+      'id' => 'imagem1',
+      'type' => 'file',
+    ]);
+
+    $portifolio->add_group_field($imagens,[
+      'name' => 'Imagem 1',
+      'id' => 'descricao_imagem1',
+      'type' => 'text',
+    ]);
+
+    $portifolio->add_group_field($imagens,[
+      'name' => 'Imagem 2',
+      'id' => 'imagem2',
+      'type' => 'file',
+    ]);
+
+    $portifolio->add_group_field($imagens,[
+      'name' => 'Imagem 2',
+      'id' => 'descricao_imagem2',
+      'type' => 'text',
+    ]);
+
+    $portifolio->add_group_field($imagens,[
+      'name' => 'Imagem 3',
+      'id' => 'imagem3',
+      'type' => 'file',
+    ]);
+
+    $portifolio->add_group_field($imagens,[
+      'name' => 'Imagem 3',
+      'id' => 'descricao_imagem3',
+      'type' => 'text',
+    ]);
+
 }
