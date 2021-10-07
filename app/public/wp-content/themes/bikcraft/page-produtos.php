@@ -1,5 +1,7 @@
-<?php get_header(); ?>
-
+<?php
+// Template Name: Produtos
+get_header();
+?>
 		<section class="introducao-interna interna_produtos">
 			<div class="container">
 				<h1>Produtos</h1>
