@@ -282,4 +282,135 @@ add_action('cmb2_admin_init', 'fields_home');
       'id' => 'nome_quote',
       'type' => 'text',
     ]);
+    //Redes sociais
+    $redes = new_cmb2_box([
+      'id' => 'redes_box',
+      'title' => 'Redes Sociais',
+      'object_types' => ['page', 'post'],
+      'show_on' => [
+        'key' => 'page-template',
+        'value' => 'page-contato.php',
+      ],
+    ]);
+
+    $rede = $redes->add_field([
+      'name' => 'Redes',
+      'id' => 'redes_sociais',
+      'type' => 'group',
+      'repeatable' => true,
+      'options' => [
+        'group_title' => 'Rede {#}',
+        'add_button' => 'Adicionar rede social',
+        'sortable' => true,
+      ]
+    ]);
+
+    $redes->add_group_field($rede,[
+      'name' => 'Link da Rede',
+      'id' => 'link_social',
+      'type' => 'text',
+    ]);
+
+    $redes->add_group_field($rede,[
+      'name' => 'Imagem da Rede',
+      'id' => 'imagem_social',
+      'type' => 'file',
+    ]);
+    $redes->add_group_field($rede,[
+      'name' => 'Nome da Rede',
+      'id' => 'nome_social',
+      'type' => 'text',
+    ]);
+    //Imagem mapa
+    $mapa = new_cmb2_box([
+      'id' => 'mapa_box',
+      'title' => 'Mapa da localização',
+      'object_types' => ['page', 'post'],
+      'show_on' => [
+        'key' => 'page-template',
+        'value' => 'page-contato.php',
+      ],
+    ]);
+
+    $mapa->add_field([
+      'name' => 'Link do Mapa',
+      'id' => 'link_mapa',
+      'type' => 'text',
+    ]);
+
+    $mapa->add_field([
+      'name' => 'imagem do Mapa',
+      'id' => 'imagem_mapa',
+      'type' => 'file',
+    ]);
+    //Contato
+    $contato = new_cmb2_box([
+      'id' => 'contato_box',
+      'title' => 'Informações de contato',
+      'object_types' => ['page', 'post'],
+      'show_on' => [
+        'key' => 'page-template',
+        'value' => 'page-contato.php',
+      ],
+    ]);
+
+    $contato->add_field([
+      'name' => 'Telefone',
+      'id' => 'telefone',
+      'type' => 'text',
+    ]);
+
+    $contato->add_field([
+      'name' => 'Email',
+      'id' => 'email',
+      'type' => 'text',
+    ]);
+
+    $contato->add_field([
+      'name' => 'Endereço 1',
+      'id' => 'endereco1',
+      'type' => 'text',
+    ]);
+
+    $contato->add_field([
+      'name' => 'Endereço 2',
+      'id' => 'endereco2',
+      'type' => 'text',
+    ]);
+    //footer
+    $footer = new_cmb2_box([
+      'id' => 'footer_box',
+      'title' => 'Informações do footer',
+      'object_types' => ['page', 'post'],
+      'show_on' => [
+        'key' => 'page-template',
+        'value' => 'page-contato.php',
+      ],
+    ]);
+
+    $footer->add_field([
+      'name' => 'Background footer',
+      'id' => 'background_quebra',
+      'type' => 'file',
+    ]);
+
+    $footer->add_field([
+      'name' => 'Frase footer',
+      'id' => 'frase_footer',
+      'type' => 'text',
+    ]);
+
+    $footer->add_field([
+      'name' => 'Autor footer',
+      'id' => 'autor_footer',
+      'type' => 'text',
+    ]);
+
+    $footer->add_field([
+      'name' => 'Resumo história',
+      'id' => 'resumo_historia',
+      'type' => 'text',
+    ]);
+
+
 }
