@@ -12,6 +12,13 @@ remove_action('admin_print_styles', 'print_emoji_styles');
 
 add_theme_support('menus');
 
+function my_custom_sizes(){
+  add_image_size('large', 1400, 380, true);
+  add_image_size('medium', 768, 380, true);
+}
+add_action('after_setup_theme', 'my_custom_sizes');
+
+
 function get_field($key, $page_id = 0){
   $id = $page_id !== 0 ? $page_id : get_the_ID();
 
@@ -198,5 +205,20 @@ add_action('cmb2_admin_init', 'fields_home');
       'id' => 'subtitulo',
       'type' => 'text',
     ]);
+    //backgroud Home
+    $home_background = new_cmb2_box([
+      'id' => 'background_home_box',
+      'title' => 'Imagem do backgroud',
+      'object_types' => ['page', 'post'],
+      'show_on' => [
+        'key' => 'page-template',
+        'value' => 'page-home.php',
+      ],
+    ]);
 
+    $home_background->add_field([
+      'name' => 'Imagem Background',
+      'id' => 'background_home',
+      'type' => 'file',
+    ]);
 }
