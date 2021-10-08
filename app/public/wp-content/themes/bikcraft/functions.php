@@ -249,4 +249,37 @@ add_action('cmb2_admin_init', 'fields_home');
       'id' => 'imagem_equipe',
       'type' => 'file',
     ]);
+    //quotes
+    $quote = new_cmb2_box([
+      'id' => 'quote_box',
+      'title' => 'Citações',
+      'object_types' => ['page', 'post'],
+      'show_on' => [
+        'key' => 'page-template',
+        'value' => 'page-portfolio.php',
+      ],
+    ]);
+
+    $citacoes = $quote->add_field([
+      'name' => 'Citações',
+      'id' => 'citacoes_portfolio',
+      'type' => 'group',
+      'repeatable' => true,
+      'options' => [
+        'group_title' => 'Citações {#}',
+        'add_button' => 'Adicionar portfólio',
+        'sortable' => true,
+      ]
+    ]);
+
+    $quote->add_group_field($citacoes,[
+      'name' => 'Citação',
+      'id' => 'quote',
+      'type' => 'text',
+    ]);
+    $quote->add_group_field($citacoes,[
+      'name' => 'Criador da Citação',
+      'id' => 'nome_quote',
+      'type' => 'text',
+    ]);
 }
