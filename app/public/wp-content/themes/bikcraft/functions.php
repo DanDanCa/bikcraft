@@ -221,4 +221,32 @@ add_action('cmb2_admin_init', 'fields_home');
       'id' => 'background_home',
       'type' => 'file',
     ]);
+    //sobre - missao
+    $empresa = new_cmb2_box([
+      'id' => 'empresa_box',
+      'title' => 'Informações da Empresa',
+      'object_types' => ['page', 'post'],
+      'show_on' => [
+        'key' => 'page-template',
+        'value' => 'page-sobre.php',
+      ],
+    ]);
+
+    $empresa->add_field([
+      'name' => 'História, Missão, Visão',
+      'id' => 'missao',
+      'type' => 'textarea',
+    ]);
+
+    $empresa->add_field([
+      'name' => 'Valores',
+      'id' => 'valores',
+      'type' => 'wysiwyg',
+    ]);
+
+    $empresa->add_field([
+      'name' => 'Imagem da equipe',
+      'id' => 'imagem_equipe',
+      'type' => 'file',
+    ]);
 }
