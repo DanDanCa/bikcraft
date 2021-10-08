@@ -176,5 +176,27 @@ add_action('cmb2_admin_init', 'fields_home');
       'id' => 'descricao_imagem3',
       'type' => 'text',
     ]);
+    //Background interno
+    $background = new_cmb2_box([
+      'id' => 'background_box',
+      'title' => 'Imagens backgroud',
+      'object_types' => ['page', 'post'],
+      'show_on' => [
+        'key' => 'page-template',
+        'value' => ['page-portfolio.php','page-sobre.php','page-produtos.php','page-contato.php'],
+      ],
+    ]);
+
+    $background->add_field([
+      'name' => 'Imagem Background',
+      'id' => 'background_interno',
+      'type' => 'file',
+    ]);
+
+    $background->add_field([
+      'name' => 'Subtítulo',
+      'id' => 'subtitulo',
+      'type' => 'text',
+    ]);
 
 }

@@ -7,14 +7,17 @@ Description: Tema criado para a Bikcraft
 Version: 1.0
 */
 
-@import 'css/reset.css';
 @import 'css/normalize.css';
+@import 'css/reset.css';
 @import 'css/grid.css';
 @import 'css/sobre.css';
 @import 'css/produtos.css';
 @import 'css/portifolio.css';
 @import 'css/contato.css';
-
+/*Estilos ADM*/
+.customize-support .header{
+	margin-top:32px;
+}
 /* Estilos Gerais */
 body {
 	font-family: Arial, Helvetica, sans-serif;
