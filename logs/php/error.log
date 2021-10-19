@@ -185,3 +185,40 @@ Stack trace:
 [08-Oct-2021 16:21:45 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\footer.php on line 3
 [08-Oct-2021 16:21:45 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\footer.php on line 3
 [08-Oct-2021 16:21:45 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-content\themes\bikcraft\footer.php on line 3
+[19-Oct-2021 16:17:49 UTC] PHP Warning:  Error while sending QUERY packet. PID=3784 in C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\wp-db.php on line 2056
+[19-Oct-2021 16:17:49 UTC] PHP Stack trace:
+[19-Oct-2021 16:17:49 UTC] PHP   1. {main}() C:\Users\Danilo\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[19-Oct-2021 16:17:49 UTC] PHP   2. include() C:\Users\Danilo\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[19-Oct-2021 16:17:49 UTC] PHP   3. include() phar://C:/Users/Danilo/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[19-Oct-2021 16:17:49 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Users/Danilo/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[19-Oct-2021 16:17:49 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Users/Danilo/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:77
+[19-Oct-2021 16:17:49 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Users/Danilo/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[19-Oct-2021 16:17:49 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar://C:/Users/Danilo/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1192
+[19-Oct-2021 16:17:49 UTC] PHP   8. require() phar://C:/Users/Danilo/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1271
+[19-Oct-2021 16:17:49 UTC] PHP   9. do_action() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-settings.php:578
+[19-Oct-2021 16:17:49 UTC] PHP  10. WP_Hook->do_action() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\plugin.php:470
+[19-Oct-2021 16:17:49 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\class-wp-hook.php:327
+[19-Oct-2021 16:17:49 UTC] PHP  12. wp_widgets_init() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\class-wp-hook.php:303
+[19-Oct-2021 16:17:49 UTC] PHP  13. do_action() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\widgets.php:1809
+[19-Oct-2021 16:17:49 UTC] PHP  14. WP_Hook->do_action() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\plugin.php:470
+[19-Oct-2021 16:17:49 UTC] PHP  15. WP_Hook->apply_filters() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\class-wp-hook.php:327
+[19-Oct-2021 16:17:49 UTC] PHP  16. WP_Widget_Factory->_register_widgets() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\class-wp-hook.php:303
+[19-Oct-2021 16:17:49 UTC] PHP  17. WP_Widget_Text->_register() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\class-wp-widget-factory.php:102
+[19-Oct-2021 16:17:49 UTC] PHP  18. WP_Widget_Text->_register_one() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\class-wp-widget.php:274
+[19-Oct-2021 16:17:49 UTC] PHP  19. wp_add_inline_script() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\widgets\class-wp-widget-text.php:59
+[19-Oct-2021 16:17:49 UTC] PHP  20. wp_scripts() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\functions.wp-scripts.php:147
+[19-Oct-2021 16:17:49 UTC] PHP  21. WP_Scripts->__construct() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\functions.wp-scripts.php:24
+[19-Oct-2021 16:17:49 UTC] PHP  22. WP_Scripts->init() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\class.wp-scripts.php:142
+[19-Oct-2021 16:17:49 UTC] PHP  23. do_action_ref_array() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\class.wp-scripts.php:167
+[19-Oct-2021 16:17:49 UTC] PHP  24. WP_Hook->do_action() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\plugin.php:518
+[19-Oct-2021 16:17:49 UTC] PHP  25. WP_Hook->apply_filters() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\class-wp-hook.php:327
+[19-Oct-2021 16:17:49 UTC] PHP  26. wp_default_packages() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\class-wp-hook.php:303
+[19-Oct-2021 16:17:49 UTC] PHP  27. wp_register_tinymce_scripts() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\script-loader.php:551
+[19-Oct-2021 16:17:49 UTC] PHP  28. script_concat_settings() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\script-loader.php:50
+[19-Oct-2021 16:17:49 UTC] PHP  29. get_site_option() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\script-loader.php:2225
+[19-Oct-2021 16:17:49 UTC] PHP  30. get_network_option() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\option.php:1292
+[19-Oct-2021 16:17:49 UTC] PHP  31. get_option() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\option.php:1427
+[19-Oct-2021 16:17:49 UTC] PHP  32. wpdb->get_row() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\option.php:171
+[19-Oct-2021 16:17:49 UTC] PHP  33. wpdb->query() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\wp-db.php:2615
+[19-Oct-2021 16:17:49 UTC] PHP  34. wpdb->_do_query() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\wp-db.php:1945
+[19-Oct-2021 16:17:49 UTC] PHP  35. mysqli_query() C:\Users\Danilo\Local Sites\bikcraft\app\public\wp-includes\wp-db.php:2056
